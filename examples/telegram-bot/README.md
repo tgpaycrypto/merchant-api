@@ -53,7 +53,7 @@ The bot listens on port 8080: `POST /tgpay/webhook` for deliveries, `GET /health
 check. The compose file binds it to loopback — put a reverse proxy with TLS in front, or a tunnel
 while developing.
 
-To buy, a second Telegram account opens the testnet wallet, taps **Get test crypto** on the home
+To buy, a second Telegram account opens the testnet wallet, taps **Get test coins** on the home
 screen and sends `/buy` to your bot. The channel's own admins are always billed: that is how you
 test a purchase on an account that is already in the channel.
 

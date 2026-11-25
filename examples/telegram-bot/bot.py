@@ -71,7 +71,7 @@ TEXTS = {
         "start": (
             "This is a demo of the TgPay Crypto Merchant API on the testnet: "
             "no real money is needed.\n\n"
-            "1. Open @tgpaycrypto_testnet_bot and tap «Get test crypto» on the "
+            "1. Open @tgpaycrypto_testnet_bot and tap “Get test coins” on the "
             "home screen.\n"
             "2. Come back and send /buy.\n\n"
             "The invoice is priced in dollars, you pay with any cryptocurrency, "
