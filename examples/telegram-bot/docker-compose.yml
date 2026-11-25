@@ -1,0 +1,23 @@
+services:
+  bot:
+    build: .
+    restart: always
+    env_file: .env
+    ports:
+      # Loopback only: the reverse proxy in front exposes /tgpay/webhook.
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - data:/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  data:

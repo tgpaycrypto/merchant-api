@@ -80,6 +80,10 @@ Respond `2xx` quickly and dedupe on `update_id` — failed deliveries are retrie
 
 No dependencies — standard library only.
 
+A complete bot built on these pieces: [`examples/telegram-bot/`](examples/telegram-bot/) sells access to a
+private channel for $1 in any cryptocurrency (aiogram 3, SQLite, Docker). It runs on the testnet as
+[@tgpaycrypto_demo_bot](https://t.me/tgpaycrypto_demo_bot).
+
 ## Support
 
 - Telegram: [@tgpaycryptobot](https://t.me/tgpaycryptobot) · news: [@tgpaycrypto_en](https://t.me/tgpaycrypto_en)
